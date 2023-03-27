@@ -26,7 +26,7 @@
 5) Open the class: WarehouseApplication and launch the application
    here I made some methods that load some tables, take a look if you can
 
-6) Now you can test via POSTMAN vei file
+6) Now you can test via POSTMAN "PostmanTest-Warehouse.postman_collection.json" file
    which I have always enclosed here in this package
 
 
