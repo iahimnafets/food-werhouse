@@ -1,0 +1,94 @@
+{
+	"info": {
+		"_postman_id": "bef559a4-8028-4112-ad09-1b2eebb1e91d",
+		"name": "PostmanTest-Warehouse-MihaiStefan",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5652336"
+	},
+	"item": [
+		{
+			"name": "getProductById ==>  ( Get something specific by ID )",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "getAllProducts ==> ( Get all items )",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "getWeightOfAllFoodItems ==> ( Get the weight of all food items )",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "getWeightOfAllFoodItemsByCategory ==> ( Not request in specs )",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "getAllProductsVegetables  ==> ( Not request in specs  )",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "getWeightOfAllVegetables ==> ( Get all vegetables )",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/warehouse/product/all-weight-vegetables",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"warehouse",
+						"product",
+						"all-weight-vegetables"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getProductsWithDiscount ==> ( Not request in specs  )",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/warehouse/product/all-weight-vegetables",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"warehouse",
+						"product",
+						"all-weight-vegetables"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

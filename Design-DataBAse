@@ -1,0 +1,66 @@
+
+****   Design data base Food Warehouse *****
+
+table "categories"
+    "category_id"  ( primary key )
+    "category_description"
+    "category_name"
+
+
+table "customers"
+    "customer_id" ( primary key )
+    "customer_address"
+    "customer_name"
+    "email"
+    "payment_information"
+    "phone_number"
+
+    
+table "discounts"
+    "discount_id" ( primary key )
+    "discount_end_date"
+    "discount_name"
+    "discount_percentage"
+    "discount_start_date"
+
+table "order_items"
+    "order_items_id" ( primary key )
+    "price"
+    "quantity"
+    "order_id"   ( foreign Key )
+    "product_id" ( foreign Key )
+
+table "orders"
+    "order_id" ( primary key )
+    "product_description"
+    "product_name"
+    "product_price"
+    "product_quantity"
+    "category_id" ( foreign Key )
+    "discount_id" ( foreign Key )
+    "supplier_id" ( foreign Key )
+
+table "products"
+   "products_id"  ( primary key )
+    "discount"
+    "product_description"
+    "product_name"
+    "quantity_on_hand"
+    "unit_of_measure"
+    "unit_price"
+    "category_id"  ( foreign Key )
+    "supplier_id"  ( foreign Key )
+    "discount_id"  ( foreign Key )
+
+table "shipments"
+    "shipments_id" ( primary key )
+    "carrier"
+    "shipment_date"
+    "tracking_number"
+    "order_id"  ( foreign Key )
+    
+table "suppliers"
+    "supplier_id" ( primary key )
+    "supplier_address"
+    "supplier_contact_info"
+    "supplier_name"
