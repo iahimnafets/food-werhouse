@@ -1,8 +1,11 @@
 package com.food.warehouse.service;
 
 import com.food.warehouse.entities.Category;
+import com.food.warehouse.entities.Supplier;
 import com.food.warehouse.repository.CategoryRepository;
+import com.food.warehouse.repository.CustomerRepository;
 import com.food.warehouse.repository.OrderRepository;
+import com.food.warehouse.repository.SupplierRepository;
 import io.swagger.v3.oas.annotations.servers.Server;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;

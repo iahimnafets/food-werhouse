@@ -30,7 +30,11 @@ public class WarehouseApplication {
 	 * @param args˙
 	 */
 	public static void main(String[] args) {
-		SpringApplication.run(WarehouseApplication.class, args);
+		try {
+	     	SpringApplication.run(WarehouseApplication.class, args);
+		}catch(Exception ex){
+			ex.printStackTrace();
+		}
 	}
 
 	@Bean
@@ -44,12 +48,12 @@ public class WarehouseApplication {
 						  SupplierService supplierService,
 						  DiscountService discountService) {
 
-		return args -> {
-			createCategories( categoryService );
-			createSuppliers( supplierService );
-			createDiscount( discountService );
-			createProduct( productService );
-		};
+			return args -> {
+					createCategories(categoryService);
+					createSuppliers(supplierService);
+					createDiscount(discountService);
+					createProduct(productService);
+			};
 	}
 
 	private void createDiscount(DiscountService discountService) {
@@ -102,9 +106,16 @@ public class WarehouseApplication {
 				.supplierAddress("Strada Tudor Vladimirescu 89 Bucuresti, Romania ")
 				.build();
 
+		Supplier supplier4 = Supplier.builder()
+				.supplierName("Mihai Stefan")
+				.supplierContactInfo("mihai@example.com")
+				.supplierAddress("Strada Tudor Vladimirescu 89 Bucuresti, Romania ")
+				.build();
+
 		supplierService.save( supplier1 );
 		supplierService.save( supplier2 );
 		supplierService.save( supplier3 );
+	// 	supplierService.save( supplier4 );  cannot be entered, it has an email identical to another ( supplier3 )
 
 	}
 

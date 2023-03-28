@@ -30,17 +30,14 @@ public class Supplier {
     @Column(name = "supplier_id")
     private Long id;
 
-    @Column(name = "supplier_name")
+    @Column(name = "supplier_name", nullable = false)
     private String supplierName;
 
-    @Column(name = "supplier_contact_info")
+    @Column(name = "supplier_contact_info", unique=true, nullable = false)
     private String supplierContactInfo;
 
     @Column(name = "supplier_address")
     private String supplierAddress;
-
-    // @OneToMany(mappedBy = "supplier" , fetch = FetchType.LAZY )
-   // private List<Product> products;
 
 }
 
