@@ -10,7 +10,21 @@
 			"name": "getProductById ==>  ( Get something specific by ID )",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/warehouse/product/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"warehouse",
+						"product",
+						"1"
+					]
+				}
 			},
 			"response": []
 		},
@@ -18,7 +32,21 @@
 			"name": "getAllProducts ==> ( Get all items )",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/warehouse/product/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"warehouse",
+						"product",
+						"all"
+					]
+				}
 			},
 			"response": []
 		},
@@ -26,7 +54,21 @@
 			"name": "getWeightOfAllFoodItems ==> ( Get the weight of all food items )",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/warehouse/product/all-weight",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"warehouse",
+						"product",
+						"all-weight"
+					]
+				}
 			},
 			"response": []
 		},
@@ -34,7 +76,21 @@
 			"name": "getWeightOfAllFoodItemsByCategory ==> ( Not request in specs )",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/warehouse/product/all-weight-category",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"warehouse",
+						"product",
+						"all-weight-category"
+					]
+				}
 			},
 			"response": []
 		},
@@ -42,7 +98,21 @@
 			"name": "getAllProductsVegetables  ==> ( Not request in specs  )",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/warehouse/product/vegetables",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"warehouse",
+						"product",
+						"vegetables"
+					]
+				}
 			},
 			"response": []
 		},
@@ -74,7 +144,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/api/warehouse/product/all-weight-vegetables",
+					"raw": "http://localhost:8080/api/warehouse/product/calculate-discount",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -84,7 +154,7 @@
 						"api",
 						"warehouse",
 						"product",
-						"all-weight-vegetables"
+						"calculate-discount"
 					]
 				}
 			},
