@@ -14,3 +14,24 @@ backend. This document can also contain explanations for the decisions you made.
 Documentation of the APIs that you implemented. It’s completely your choice how to showcase
 to us a professional, simple, and readable documentation of your APIs. It must allow another
 Engineer to use your backend.
+
+
+Result:
+
+Data Model
+Feel free to create and design your own data model that will help you create the APIs. Make
+sure that all items have at least a name and weight attribute. You may make the data model as
+simple or complex as you wish.
+
+For a backend to function at its most basic level it should have APIs exposed to add, get and
+delete food items. Below are some examples:
+● Some examples for fetching food items:
+○ Get something specific by ID
+○ Get all items
+○ Get all vegetables
+
+You may wish to add APIs that show more of your skill or to showcase something special. This
+is optional and not a requirement of the task. Below are some examples:
+● Special API that calculates the weight of all products in a group. Examples:
+○ Get the weight of all food items
+○ Get the weight of all vegetables

@@ -1,4 +1,14 @@
 
+This application was written with these technologies:
+Spring Boot 2 + Jersey REST + JPA + Hibernate and postgresql
+
+In this project we looked more at the organized
+aspect of the database part and JPA.
+
+Only one controller was written: WarehouseController (because it's just an EXAMPLE)
+actually in a real application we have to separate each
+context with its responsibility: product, customer, order, category...
+
 ****   Design data base Food Warehouse *****
 
 table "categories"
